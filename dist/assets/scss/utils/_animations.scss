@@ -1,0 +1,55 @@
+.fade-in{
+    opacity: 0;        
+    -webkit-transition: all ease-in-out;        
+    transition: all ease-in-out;
+}
+
+.zoom-in--right{
+    -webkit-transform: translateX(8rem);
+    transform: translateX(8rem);
+    -webkit-transition: all ease-in-out;
+    transition: all ease-in-out;
+}
+
+.zoom-in--left{
+    -webkit-transform: translateX(-8rem);
+    transform: translateX(-8rem);
+    -webkit-transition: all ease-in-out;
+    transition: all ease-in-out;
+}
+
+.zoom-in--bottom{
+    -webkit-transform: translateY(8rem);
+    transform: translateY(8rem);
+    -webkit-transition: all ease-in-out;
+    transition: all ease-in-out;
+}
+
+.zoom-in--top{
+    -webkit-transform: translateY(-8rem);
+    transform: translateY(-8rem);
+    -webkit-transition: all ease-in-out;
+    transition: all ease-in-out;
+}
+
+.animate--fast{
+    transition-duration: .3s;
+}
+
+.grow:hover{
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.grow{
+    -webkit-transition: all ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.color-fade{
+    -webkit-transition: color .4s,color .4s;
+    transition: color .4s,color .4s;  
+    -webkit-transition-property: color,color;
+    transition-property: color,color;
+    animation-name: fadeInTop;
+}

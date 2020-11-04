@@ -1,0 +1,39 @@
+{
+  "name": "mamba",
+  "title": "Mamba",
+  "version": "2.1.0",
+  "description": "Mamba - Bootstrap Website Template",
+  "author": "BootstrapMade.com",
+  "homepage": "https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/",
+  "license": "https://bootstrapmade.com/license/",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node_modules/.bin/gulp start",
+    "watch": "node_modules/.bin/gulp watch",
+    "dist": "node_modules/.bin/gulp"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.4.1",
+    "boxicons": "^2.0.4",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.4.1",
+    "jquery-sticky": "^1.0.4",
+    "jquery.easing": "^1.4.1",
+    "venobox": "^1.8.6",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-beautify": "^3.0.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-nunjucks": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "merge-stream": "^2.0.0"
+  }
+}

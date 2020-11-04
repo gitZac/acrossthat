@@ -1,0 +1,36 @@
+.switchbox{
+    padding-bottom:3rem;
+   .page-id-41 &__container{
+        margin-bottom:5rem;
+    }
+    &__cta-title{
+        padding-bottom:30px;
+    }
+    &__column-title{
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin:0 0 20px 0;
+    }
+    &__cta-text{
+        font-size: 1.4rem;
+    }
+    &__content{
+    
+        ul {
+        list-style: none;
+        padding: 0;
+        li {
+            padding-bottom: 10px;
+        }
+        i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: $primary;
+        }
+        }
+        p:last-child {
+        margin-bottom: 0;
+        }
+    }
+
+}

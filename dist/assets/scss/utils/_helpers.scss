@@ -1,0 +1,116 @@
+.accent{
+    color:$accent;
+    font-weight: bold;
+}
+
+.accent-light{
+    color:$accent-light;
+    font-weight: bold;
+    background: #333;
+    padding:0 1rem;
+}
+
+.accent-dark{
+    color:$accent-dark;
+    font-weight: bold;
+}
+
+.alignself-c{
+    align-self: center;
+}
+
+.padding-none{
+    padding:0;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+// TEXT
+
+.text-center{
+    text-align: center;
+}
+
+// Width
+
+.w-100{
+    width:100%;
+}
+
+// Padding
+
+.pad-tb-1{
+    padding:1rem 0;
+}
+
+.pad-all-1{
+    padding:1rem;
+}
+.pad-all-halfrem{
+    padding:.5rem !important;
+}
+.pad-none{
+    padding:0 !important;
+}
+
+// ABSOLUTE POSITIONING 
+
+.abs-wrapper{
+    position: absolute;
+    // width:100%;
+
+    &--right-top{
+        top:10%;
+        right:0;
+    }
+
+    &--left-top{
+        top:10%;
+        left:0;
+    }
+
+    &--center-top{
+        top:0%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    &--center{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--center-left{
+        top:50%;
+        left:0%;
+    }
+
+    &--center-right{
+        top:50%;
+        right:0%;
+    }
+
+    &--center-bottom{
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    &--right-bottom{
+        bottom:0;
+        right:0;
+    }
+
+    &--left-bottom{
+        bottom:0;
+        left:0;
+    }
+
+    &--title-center{
+        width:100%;
+        // text-align: center;
+    }
+}
