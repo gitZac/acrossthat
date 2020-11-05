@@ -45,7 +45,7 @@
       <div class="logo float-left">
         <!-- <h1 class="text-light"><a href="index.html"><span>FS/TAN</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-		<?php the_custom_logo(); ?>
+		<?php the_custom_logo();?>
 
       </div>
 
