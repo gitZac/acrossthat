@@ -53,3 +53,7 @@
     transition-property: color,color;
     animation-name: fadeInTop;
 }
+
+.animate--infinite{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}

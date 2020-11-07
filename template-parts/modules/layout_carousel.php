@@ -17,7 +17,7 @@
                                 <div class="carousel-content container">
                                 <h2 class="animated fadeInDown"><?php echo $headline;?></h2>
                                 <p class="animated fadeInUp"><?php echo $slide_description; ?></p>
-                                <a href="<?php echo $button_link; ?>" class="btn-get-started animated fadeInUp scrollto"><?php echo $slide_button_text; ?></a>
+                                <a href="<?php echo $button_link; ?>" class="btn--rect animated fadeInUp scrollto"><?php echo $slide_button_text; ?></a>
                                 </div>
                             </div>
                         </div>

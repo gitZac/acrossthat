@@ -26,7 +26,6 @@
     }
 }
 
-
 .btn-get-started {
     font-family: $font-default;
     font-weight: 500;
@@ -44,4 +43,66 @@
     &:hover {
       background: $primary-light;
     }
+  }
+
+
+  .btn-get-started {
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+    }
+  }
+
+
+
+
+  .btn--curved {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background: #47b2e4;
+  }
+  
+  .btn--curved:hover {
+    background: #209dd8;
+  }
+  
+  #hero .btn-watch-video {
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 0 8px 40px;
+    transition: 0.5s;
+    margin: 10px 0 0 25px;
+    color: #fff;
+    position: relative;
+  }
+  
+  #hero .btn-watch-video i {
+    color: #fff;
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    transition: 0.3s;
+  }
+  
+  #hero .btn-watch-video:hover i {
+    color: #47b2e4;
   }

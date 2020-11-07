@@ -14,21 +14,76 @@ h1{
 
 .section-title h2, h2{
     font-size: 48px ;
-    font-weight: 700 !important;
     color: $primary-dark;
 }
 
 h3{
     font-size: 32px;
-    font-weight: 400;
 }
 
 h4{
-    font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
 }
 
-a{
+.header{
+    padding-bottom:.5rem;
 
+    &--light{
+        color:#fff;
+    }
+
+    &--text-upper{
+        text-transform: uppercase;
+    }
+
+    &--super{
+        font-size: 4rem;
+        line-height: 56px;
+    }
+
+    &--main{
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+
+    &--secondary{
+        font-size: 2.2rem;
+    }
+
+    &--third{
+        font-size: 1.8rem;
+    }
+
+    &--fourth{
+        font-size: 1.6rem;
+    }
+    &--fifth{
+        font-size: 1.4rem;
+    }
+}
+
+.fontw-100{
+    font-weight: 100;
+}
+.fontw-200{
+    font-weight: 200;
+}
+.fontw-300{
+    font-weight: 300;
+}
+.fontw-400{
+    font-weight: 400;
+}
+.fontw-500{
+    font-weight: 500;
+}
+.fontw-600{
+    font-weight: 600;
+}
+.fontw-700{
+    font-weight: 700;
+}
+.fontw-800{
+    font-weight: 800;
 }
