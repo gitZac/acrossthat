@@ -82,3 +82,11 @@
       color: #fff;
     }
   }
+
+  @media (max-width: 575px){
+    .btn--curved {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
+  }
+
