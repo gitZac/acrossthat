@@ -1,8 +1,4 @@
 .btn{
-    &--primary{
-
-    }
-
     &__nav{
         a{
             font-family: $font-default;
@@ -26,7 +22,7 @@
     }
 }
 
-.btn-get-started {
+  .btn--rect {
     font-family: $font-default;
     font-weight: 500;
     font-size: 18px;
@@ -45,27 +41,30 @@
     }
   }
 
-
-  .btn-get-started {
-    font-family: $font-primary;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+  .btn--watch {
+    font-size: 16px;
     display: inline-block;
-    padding: 10px 28px;
+    padding: 10px 0 8px 40px;
     transition: 0.5s;
-    border: 2px solid #fff;
+    margin: 10px 0 0 25px;
     color: #fff;
-    &:hover {
-      background: $primary;
-      border-color: $primary;
+    position: relative;
+    i{
+      color: #fff;
+      font-size: 32px;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      transition: 0.3s;
+    }
+    &:hover i{
+      color: #47b2e4;
+    }
+    &:hover{
+      color:#fff;
     }
   }
-
-
-
-
+  
   .btn--curved {
     font-family: "Jost", sans-serif;
     font-weight: 500;
@@ -78,31 +77,16 @@
     margin: 10px 0 0 0;
     color: #fff;
     background: #47b2e4;
+    &:hover{
+      background: #209dd8;
+      color: #fff;
+    }
   }
-  
-  .btn--curved:hover {
-    background: #209dd8;
+
+  @media (max-width: 575px){
+    .btn--curved {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
   }
-  
-  #hero .btn-watch-video {
-    font-size: 16px;
-    display: inline-block;
-    padding: 10px 0 8px 40px;
-    transition: 0.5s;
-    margin: 10px 0 0 25px;
-    color: #fff;
-    position: relative;
-  }
-  
-  #hero .btn-watch-video i {
-    color: #fff;
-    font-size: 32px;
-    position: absolute;
-    left: 0;
-    top: 7px;
-    transition: 0.3s;
-  }
-  
-  #hero .btn-watch-video:hover i {
-    color: #47b2e4;
-  }
+

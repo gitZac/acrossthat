@@ -6,8 +6,7 @@ $intro = get_sub_field('intro');
 $bg_color = get_sub_field('background_color');
 $style = get_sub_field('style'); 
 $height = get_sub_field('height');
-$use_breadcrumbs = get_sub_field('use_breadcrumbs');
-?>
+$use_breadcrumbs = get_sub_field('use_breadcrumbs');?>
 
 <?php if($style == 'background_image' ) {  ?>
 
@@ -35,7 +34,7 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs');
 
 <?php } elseif($style == 'two_columns' ) { ?>
 
-<section class="hero hero--two-col d-flex align-items-center" style="background:<?php echo $bg_color; ?>; height:<?php echo $height; ?>vh; ">
+<section class="hero hero--two-col d-flex align-items-center" style="background:<?php echo $bg_color; ?>;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">

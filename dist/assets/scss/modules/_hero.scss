@@ -40,6 +40,27 @@
     max-width: 48rem;
   }
 
+  &__image{
+
+  }
+
+  @media (max-width: 991px) {
+    &__image{
+      text-align: center;
+      img{
+        width: 50%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    &__image{
+      img{
+        width: 70%;
+
+      }
+    }
+  }
+
   @media (min-width: 1024px) {
     background-attachment: fixed;
   }
@@ -70,7 +91,6 @@
 # Hero BG
 --------------------------------------------------------------*/
 .hero.hero--bg{
-
   &:before {
     content: "";
     background: rgba(0, 0, 0, 0.25);
@@ -88,74 +108,7 @@
 # Hero Two Columns
 --------------------------------------------------------------*/
 
-.hero.hero--twocol{
-
+.hero.hero--two-col{
+    // height: 90vh;
+    // text-align: center;
 }
-
-#hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
-@media (max-width: 991px) {
-  #hero {
-    height: 100vh;
-    text-align: center;
-  }
-  #hero .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
-  #hero .hero-img {
-    text-align: center;
-  }
-  #hero .hero-img img {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-
-  #hero .hero-img img {
-    width: 70%;
-  }
-}
-
-@media (max-width: 575px) {
-  #hero .hero-img img {
-    width: 80%;
-  }
-  .btn--curved {
-    font-size: 16px;
-    padding: 10px 24px 11px 24px;
-  }
-  #hero .btn-watch-video {
-    font-size: 16px;
-    padding: 10px 0 8px 40px;
-    margin-left: 20px;
-  }
-  #hero .btn-watch-video i {
-    font-size: 32px;
-    top: 7px;
-  }
-}
-
-@-webkit-keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-
-
