@@ -41,37 +41,15 @@
   }
 
   &__image{
-
-  }
-
-  @media (max-width: 991px) {
-    &__image{
-      text-align: center;
-      img{
-        width: 50%;
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    &__image{
-      img{
-        width: 70%;
-
-      }
-    }
-  }
-
-  @media (min-width: 1024px) {
-    background-attachment: fixed;
-  }
-
-  @media (max-width: 768px) {
     text-align: center;
-    .container {
-      padding-top: 40px;
-    }
-    h1 {
-      font-size: 56px;
+    img{
+      width: 75%;
+      @include for-desktop-up{
+        text-align: left;
+      }
+      @include for-tablet-landscape-up{
+        width: 100%;
+      }
     }
   }
 }
@@ -101,8 +79,6 @@
     right: 0;
   }
 }
-
-// NEW STYLES
 
 /*--------------------------------------------------------------
 # Hero Two Columns
