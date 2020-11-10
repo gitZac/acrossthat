@@ -27,8 +27,8 @@ h4{
 }
 
 .header{
-    padding-bottom:.5rem;
 
+    padding-bottom: 1rem;
     &--light{
         color:#fff;
     }
@@ -38,13 +38,12 @@ h4{
     }
 
     &--super{
-        font-size: 4rem;
+        font-size: 3.6rem;
         line-height: 56px;
     }
 
     &--main{
-        font-size: 3.6rem;
-        font-weight: 700;
+        font-size: 3.2rem;
     }
 
     &--secondary{
