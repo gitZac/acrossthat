@@ -22,7 +22,7 @@ $carousel = new WP_Query($args);
                                 <div class="carousel-content container">
                                 <h2 class="animated fadeInDown"><?php the_title(); ?></h2>
                                 <p class="animated fadeInUp"><?php the_field('slide_description'); ?></p>
-                                <a href="<?php the_field('slide_button_link'); ?>" class="btn--rect animated fadeInUp scrollto"><?php the_field('slide_button_text'); ?></a>
+                                <a href="<?php the_field('slide_button_link'); ?>" class="ax-btn--rect animated fadeInUp scrollto"><?php the_field('slide_button_text'); ?></a>
                                 </div>
                             </div>
                         </div>
