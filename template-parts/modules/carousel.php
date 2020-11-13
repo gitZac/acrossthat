@@ -5,8 +5,7 @@
     'order' => 'DESC'
 );
 
-$carousel = new WP_Query($args);
-?>
+$carousel = new WP_Query($args); ?>
 
 <section class="carousel">
     <?php if($carousel->have_posts( ) ) { ?>
@@ -20,7 +19,9 @@ $carousel = new WP_Query($args);
                             <div class="carousel-content container">
                                 <h2 class="header header--main header--light animated fadeInDown fontw-700"><?php the_title(); ?></h2>
                                 <p class="animated fadeInUp"><?php the_field('slide_description'); ?></p>
-                                <a href="<?php the_field('slide_button_link'); ?>" class="ax-btn--rect animated fadeInUp scrollto"><?php the_field('slide_button_text'); ?></a>
+                                <div class="ax-btn">
+                                    <a href="<?php the_field('slide_button_link'); ?>" class="ax-btn--rect animated fadeInUp scrollto"><?php the_field('slide_button_text'); ?></a>
+                                </div>
                             </div>
                         </div>
                     </div>
