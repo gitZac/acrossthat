@@ -72,7 +72,7 @@ function clean() {
 
 // Task: Copy Files
 function copyFiles() {
-  const assetsFolder = gulp.src(['./src/assets/**/*', '!./src/assets/js/main.js'])
+  const assetsFolder = gulp.src(['./src/assets/**/*', '!./src/assets/js/main.js', '!./src/assets/scss/**/*'])
     .pipe(gulp.dest(distDir+'assets/'))
     .pipe(browserSync.stream());
 
