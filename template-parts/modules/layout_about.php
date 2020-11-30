@@ -37,6 +37,7 @@
                     <h4 class="title"><a href=""><?php echo $icon_title2 ?></a></h4>
                     <p class="description"><?php echo $icon_text2; ?></p>
                 </div>
+                <?php get_template_part('/template-parts/components/component_icon'); ?>
             </div>
         </div>
     </div>

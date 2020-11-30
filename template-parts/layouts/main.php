@@ -82,7 +82,7 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'about' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/about-feature' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_about' ); ?>
     
         <?php endif; ?>
 
