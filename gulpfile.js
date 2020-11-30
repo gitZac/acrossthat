@@ -72,7 +72,7 @@ function clean() {
 
 // Task: Copy Files
 function copyFiles() {
-  const assetsFolder = gulp.src(['./src/assets/**/*', '!./src/assets/js/main.js'])
+  const assetsFolder = gulp.src(['./src/assets/**/*', '!./src/assets/js/main.js', '!./src/assets/scss/**/*'])
     .pipe(gulp.dest(distDir+'assets/'))
     .pipe(browserSync.stream());
 
@@ -151,7 +151,7 @@ function copyDependencies() {
 // Init live server browser sync
 function initBrowserSync(done) {
   browserSync.init({
-    proxy: 'https://acrossthat.dev.cc/',
+    proxy: 'http://localhost:10043/',
     port: 3000,
     notify: false
   });
