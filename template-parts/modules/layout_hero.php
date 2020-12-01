@@ -2,6 +2,8 @@
 $header = get_sub_field('header');
 $subheader = get_sub_field('subheader');
 $bg = get_sub_field('background_image');
+$image = get_sub_field('image');
+$floating = get_sub_field('floating_animation');
 $intro = get_sub_field('intro');
 $bg_color = get_sub_field('background_color');
 $style = get_sub_field('style'); 
@@ -45,7 +47,7 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs'); ?>
                 <?php get_template_part( '/template-parts/components/component_button' ); ?>
             </div>
             <div class="hero__image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="200">
-                <img src="<?php echo get_template_directory_uri(  ) . '/dist/assets/img/hero-img.png'; ?>" class="img-fluid animate--infinite" alt="">
+                <img src="<?php if($image) {echo $image;} else{ echo get_template_directory_uri(  ) . '/dist/assets/img/hero-img.png'; } ?>" class="img-fluid <?php if($floating == 'enabled') {echo 'animate--infinite';} ?>  " alt="">
             </div>
         </div>
     </div>
