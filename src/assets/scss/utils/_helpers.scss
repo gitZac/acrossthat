@@ -33,6 +33,14 @@
     text-align: center;
 }
 
+.text-left{
+    text-align: left;
+}
+
+.font-italic{
+    font-style: italic;
+}
+
 // Width
 
 .w-100{
@@ -122,4 +130,14 @@
 // COLORS
 .color-secondary-light{
     color: $secondary-light;
+}
+
+.color-default-light{
+    color: $default-light;
+}
+
+// Box Shadow
+
+.box-shadow{
+    box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
 }
