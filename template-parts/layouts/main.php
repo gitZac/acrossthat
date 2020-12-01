@@ -38,9 +38,9 @@ if(have_rows('block_editor') ) : ?>
     
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'icon_group' ) : ?>
+        <?php if(get_row_layout() == 'icon_list' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/icon-list_layout' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_icon-list' ); ?>
     
         <?php endif; ?>
 
