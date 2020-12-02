@@ -1,0 +1,10 @@
+section .container, header .container{
+    max-width: 640px;
+    
+    @include for-tablet-portrait-up {
+        max-width: 1165px;
+    }
+    @include for-desktop-up {
+        max-width: 1340px;
+    }
+}

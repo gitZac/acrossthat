@@ -42,9 +42,13 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs'); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
-                <h2 class="header header--secondary color-secondary-light"><?php echo $subheader; ?></h2>
-                <?php get_template_part( '/template-parts/components/component_button' ); ?>
+                <div class="hero__content">
+                    <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
+                    <h2 class="header header--secondary header--light header--font-secondary"><?php echo $subheader; ?></h2>
+                    <div class="hero__button-wrapper">
+                        <?php get_template_part( '/template-parts/components/component_button' ); ?>
+                    </div>
+                </div>
             </div>
             <div class="hero__image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="200">
                 <img src="<?php if($image) {echo $image;} else{ echo get_template_directory_uri(  ) . '/dist/assets/img/hero-img.png'; } ?>" class="img-fluid <?php if($floating == 'enabled') {echo 'animate--infinite';} ?>  " alt="">

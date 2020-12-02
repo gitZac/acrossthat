@@ -40,14 +40,24 @@
     max-width: 48rem;
   }
 
+  &__content{
+
+  }
+
   &__image{
     text-align: center;
     img{
-      width: 75%;
-      @include for-desktop-up{
-        text-align: left;
+      width:80%;
+      @include for-tablet-portrait-up{
+        width: 60%;
       }
       @include for-tablet-landscape-up{
+        width: 50%;
+      }
+      @include for-laptop-up{
+        width: 80%;
+      }
+      @include for-desktop-up{
         width: 100%;
       }
     }
@@ -85,6 +95,17 @@
 --------------------------------------------------------------*/
 
 .hero.hero--two-col{
-    height: 80vh;
-    // text-align: center;
+    height:100vh;
+    @include for-desktop-up{
+      height: 80vh;
+    }
+    .hero__content{
+      text-align: left;
+    }
+    .hero__button-wrapper{
+      text-align: center;
+      @include for-desktop-up{
+        text-align: left;
+      }
+    }
 }
