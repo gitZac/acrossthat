@@ -7,6 +7,10 @@ body {
   font-size: 1.2rem;
 }
 
+p, a{
+  font-family: $font-default;
+}
+
 a {
   color: $links;
 }
@@ -17,7 +21,7 @@ a:hover  {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: $font-default;
+  font-family: $font-primary;
 }
 
 /*--------------------------------------------------------------
