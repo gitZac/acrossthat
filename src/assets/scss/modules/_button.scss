@@ -12,7 +12,7 @@
     display: inline-block;
     padding: 12px 32px;
     line-height: 1;
-    color: #fff !important;
+    // color: #fff;
     animation-delay: 0.8s;
     border: 0;
     background: $primary;
@@ -34,11 +34,30 @@
     }
   }
 
+  &--text{
+    margin: 0 20px;
+    font-size: 16px;
+    text-decoration: none;
+    // color: $primary;
+    display: inline-block;
+    // border-bottom: 1px solid $primary;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    // padding: 0 .5rem;
+    &:hover{
+      background-color: $primary;
+      color: #fff;
+      -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+      box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+  }
+
   &--watch{
     display: inline-block;
     padding: 10px 0 8px 40px;
     margin: 10px 0 0 25px;
-    color: #fff;
     position: relative;
     i{
       color: #fff;
@@ -49,10 +68,10 @@
       transition: 0.3s;
     }
     &:hover i{
-      color: $primary;
+        filter:brightness(95%);
     }
     &:hover{
-      color:#fff;
+      filter:brightness(95%);
     }
   }
 
