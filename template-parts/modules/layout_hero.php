@@ -17,7 +17,7 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs'); ?>
         <?php if($use_breadcrumbs == 'yes') : ?>
             <?php get_template_part( 'template-parts/modules/breadcrumbs' ); ?>
         <?php endif; ?>
-        <h1 class="header header--super header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
+        <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
         <h2 class="header header--secondary header--light fontw-500"><?php echo $subheader; ?></h2>
         <?php get_template_part( '/template-parts/components/component_button' ); ?>
     </div>
