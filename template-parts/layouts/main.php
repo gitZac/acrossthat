@@ -10,7 +10,7 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'team' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/team' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_team' ); ?>
 
         <?php endif; ?>
 
