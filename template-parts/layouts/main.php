@@ -62,12 +62,6 @@ if(have_rows('block_editor') ) : ?>
     
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'counterup' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/counterup' ); ?>
-    
-        <?php endif; ?>
-
         <?php if(get_row_layout() == 'faq' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/faq' ); ?>
