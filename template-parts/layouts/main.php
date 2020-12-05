@@ -20,6 +20,13 @@ if(have_rows('block_editor') ) : ?>
 
         <?php endif; ?>
 
+
+        <?php if(get_row_layout() == 'custom_post_type' ) : ?>
+
+            <?php get_template_part( 'template-parts/modules/layout_cpt' ); ?>
+
+        <?php endif; ?>
+
         <?php if(get_row_layout() == 'two-column_content' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/switchbox_layout' ); ?>

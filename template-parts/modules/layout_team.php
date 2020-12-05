@@ -1,6 +1,6 @@
 <?php $team_members = get_posts(['post_type' => 'team']); ?>
 <?php if($team_members) : 
-  $section_bg = get_sub_field('section_bg');?>
+  $section_bg = get_sub_field('section-bg');?>
   <section class="team <?php if($section_bg) { echo $section_bg; } ?>">
     <div class="container">
       <div class="section-title">
