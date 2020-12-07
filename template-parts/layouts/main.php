@@ -21,12 +21,6 @@ if(have_rows('block_editor') ) : ?>
 
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'two-column_content' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/switchbox_layout' ); ?>
-     
-        <?php endif; ?>
-
         <?php if(get_row_layout() == 'hover_box' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/scrapbook_layout' ); ?>
@@ -83,7 +77,7 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'box_group' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/switchbox' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_boxes' ); ?>
     
         <?php endif; ?>
 

@@ -1,6 +1,5 @@
 <?php if(have_rows('box_group') ) : ?>
-
-    <section class="switchbox padding-none">
+    <section class="switchbox">
         <div class="container">
             <?php while(have_rows('box_group') ) : the_row(); 
                 $title = get_sub_field('box_title');
@@ -26,5 +25,4 @@
             <?php endwhile; ?>
         </div>
     </section>
-
 <?php endif; ?>
