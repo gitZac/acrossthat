@@ -91,19 +91,42 @@ h4{
 }
 
 // ******** CUSTOM HEADER STYLES *********
+
 //HERO
 
 .hero{
     .header--main{
-        margin: 0 0 10px 0;
-        font-size: 24px;
+        font-size: 32px;
         line-height: 32px;
         font-weight: 700;
+        @include for-tablet-landscape-up {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        @include for-desktop-up {
+            font-size: 64px;
+            line-height: 56px;
+        }
+    }
+
+    .header--secondary{
+        font-size: 18px;
+        @include for-tablet-landscape-up {
+            font-size: 28px;
+        }
+        @include for-desktop-up {
+            font-size: 32px;
+        }
+    }
+
+}
+
+.hero--two-col{
+    .header--main{
+        margin: 0 0 10px 0;
         color: #fff;
         text-align:center;
         @include for-desktop-up {
-            font-size: 48px;
-            line-height: 56px;
             text-align: left;
         }
     }
@@ -111,10 +134,8 @@ h4{
     .header--secondary{
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 25px;
-        font-size: 18px;
         text-align:center;
         @include for-desktop-up {
-            font-size: 24px;
             margin-bottom: 50px;
             text-align: left;
         }

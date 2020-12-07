@@ -194,6 +194,7 @@ function ax__scripts() {
 	wp_enqueue_style( 'ax_-vendor-boxiconstrans', get_template_directory_uri() . '/dist/assets/vendor/boxicons/css/transformations.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ax_-vendor-icofont', get_template_directory_uri() . '/dist/assets/vendor/icofont/icofont.min.css', array(), _S_VERSION );
 	wp_enqueue_style( 'ax_-vendor-venobox', get_template_directory_uri() . '/dist/assets/vendor/venobox/venobox.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'ax_-vendor-remixicons', get_template_directory_uri() . '/dist/assets/vendor/remixicon/remixicon.css', array(), _S_VERSION );
 
 	// Vendor scripts
 	wp_enqueue_script( 'ax_-vendorjs-aos', get_template_directory_uri() . '/dist/assets/vendor/aos/aos.js', array(), _S_VERSION, true );
