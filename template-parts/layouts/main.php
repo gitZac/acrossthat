@@ -8,12 +8,6 @@ if(have_rows('block_editor') ) : ?>
 
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'team' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/layout_team' ); ?>
-
-        <?php endif; ?>
-
         <?php if(get_row_layout() == 'cta' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/cta' ); ?>
