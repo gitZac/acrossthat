@@ -2,6 +2,24 @@
 if(have_rows('block_editor') ) : ?>
     <?php while(have_rows('block_editor') ) : the_row(); ?>
 
+        <?php if(get_row_layout() == 'about' ) : ?>
+
+            <?php get_template_part( 'template-parts/modules/layout_about' ); ?>
+    
+        <?php endif; ?>
+
+        <?php if(get_row_layout() == 'box_group' ) : ?>
+
+            <?php get_template_part( 'template-parts/modules/layout_boxes' ); ?>
+    
+        <?php endif; ?>
+
+        <?php if(get_row_layout() == 'hero' ) : ?>
+
+            <?php get_template_part( 'template-parts/modules/layout_hero' ); ?>
+    
+        <?php endif; ?>
+
         <?php if(get_row_layout() == 'content_block' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/entry-content_layout' ); ?>
@@ -66,24 +84,6 @@ if(have_rows('block_editor') ) : ?>
         <?php if(get_row_layout() == 'process' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/process' ); ?>
-    
-        <?php endif; ?>
-
-        <?php if(get_row_layout() == 'about' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/layout_about' ); ?>
-    
-        <?php endif; ?>
-
-        <?php if(get_row_layout() == 'box_group' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/layout_boxes' ); ?>
-    
-        <?php endif; ?>
-
-        <?php if(get_row_layout() == 'hero' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/layout_hero' ); ?>
     
         <?php endif; ?>
 

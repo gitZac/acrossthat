@@ -20,6 +20,7 @@
                             <p class="font-italic"><?php echo $intro;?></p>
                         <?php endif; ?>
                         <p><?php echo $content ?></p>
+                        <?php get_template_part( '/template-parts/components/component_button' ); ?>
                     </div>
                 </div>
             <?php endwhile; ?>
