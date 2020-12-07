@@ -1,28 +1,27 @@
-/*--------------------------------------------------------------
-# Our Team
---------------------------------------------------------------*/
-.team {
+ .team--default {
     background: #fff;
     padding: 60px 0 30px 0;
-  
-  
+
     .member {
+      margin-bottom: 100px;
+      @include for-tablet-landscape-up{
+        margin-bottom: 80px;
+      }
       text-align: center;
-      margin-bottom: 80px;
       position: relative;
+    }
   
       .pic {
         border-radius: 4px;
         overflow: hidden;
-      }
-      
-      img {
-        transition: all ease-in-out 0.4s;
-      }
-    
-      &:hover {
         img {
-          transform: scale(1.1);
+          transition: all ease-in-out 0.4s;
+        }
+      
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
         }
       }
   
@@ -63,7 +62,7 @@
         color: #fff;
       }
   
-      .social {
+      .contact {
         margin-top: 15px;
         a {
           transition: color 0.3s;
@@ -79,31 +78,107 @@
           margin: 0 2px;
         }
       }
+      .social-link{
+          text-transform: capitalize;
+      }
+  }
+
+/*--------------------------------------------------------------
+# Team - Horizontal
+--------------------------------------------------------------*/
+.team--horizontal {
+  .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    padding: 30px;
+    border-radius: 5px;
+    background: $white;
+    transition: 0.5s;
+
+    .job{
+
+    }
+
+    .pic {
+      overflow: hidden;
+      width: 180px;
+      border-radius: 50%;
+      img {
+        transition: ease-in-out 0.3s;
+      }
     }
   
-    @media (max-width: 992px) {
-      .member {
-        margin-bottom: 100px;
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    .member-info {
+      padding-left: 30px;
+    }
+
+    h4 {
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 20px;
+      color: $primary;
+    }
+    
+    span {
+      display: block;
+      font-size: 15px;
+      padding-bottom: 10px;
+      position: relative;
+      font-weight: 500;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 1px;
+        background: lighten($primary, 50);
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    p {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      a {
+        transition: ease-in-out 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        width: 32px;
+        height: 32px;
+
+        background: lighten($secondary, 60);
+
+        i {
+          color: $primary;
+          font-size: 16px;
+          margin: 0 2px;
+        }
+
+        &:hover {
+          background: $primary;
+          i {
+            color: $white;
+          }
+        }
+      }
+      a + a {
+        margin-left: 8px;
       }
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Frequently Asked Questions
-  --------------------------------------------------------------*/
-  .faq  {
-  
-    padding-bottom: 30px;
-  
-    .faq-item {
-      margin-bottom: 40px;
-  
-      h4 {
-        font-size: 20px;
-        line-height: 28px;
-        font-weight: 600;
-        margin-bottom: 15px;
-        color: $secondary;
-      }
-    }
-  }
+}

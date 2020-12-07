@@ -23,12 +23,12 @@ h3{
 
 h4{
     font-size: 18px;
-    text-transform: uppercase;
 }
 
 .header{
-
     padding-bottom: 1rem;
+    color:$default;
+    text-decoration: none;
     &--light{
         color:#fff;
     }
@@ -38,29 +38,111 @@ h4{
     }
 
     &--super{
-        font-size: 3.6rem;
+        font-size: 40px;
         line-height: 56px;
     }
 
     &--main{
-        font-size: 3.2rem;
+        font-size: 52px;
     }
 
     &--secondary{
-        font-size: 2.2rem;
+        font-size: 48px;
     }
 
     &--third{
-        font-size: 1.8rem;
+        font-size: 36px;
     }
 
     &--fourth{
-        font-size: 1.6rem;
+        font-size: 24px;
     }
     &--fifth{
-        font-size: 1.4rem;
+        font-size: 18px;
+    }
+
+    &--divider{
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: $primary;
+            bottom: 0;
+            left: calc(50% - 25px);
+        }
+    }
+
+    &--linked{
+        a {
+            color: $default;
+            transition: 0.3s;
+            &:hover {
+              color: $primary;
+            }
+        }
+    }
+
+    &--font-secondary{
+        font-family: $font-secondary;
     }
 }
+
+// ******** CUSTOM HEADER STYLES *********
+
+//HERO
+
+.hero{
+    .header--main{
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        @include for-tablet-landscape-up {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        @include for-desktop-up {
+            font-size: 64px;
+            line-height: 56px;
+        }
+    }
+
+    .header--secondary{
+        font-size: 18px;
+        @include for-tablet-landscape-up {
+            font-size: 28px;
+        }
+        @include for-desktop-up {
+            font-size: 32px;
+        }
+    }
+
+}
+
+.hero--two-col{
+    .header--main{
+        margin: 0 0 10px 0;
+        color: #fff;
+        text-align:center;
+        @include for-desktop-up {
+            text-align: left;
+        }
+    }
+
+    .header--secondary{
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 25px;
+        text-align:center;
+        @include for-desktop-up {
+            margin-bottom: 50px;
+            text-align: left;
+        }
+    }
+}
+
+// UTILITIES
 
 .fontw-100{
     font-weight: 100;

@@ -2,6 +2,8 @@
 $header = get_sub_field('header');
 $subheader = get_sub_field('subheader');
 $bg = get_sub_field('background_image');
+$image = get_sub_field('image');
+$floating = get_sub_field('floating_animation');
 $intro = get_sub_field('intro');
 $bg_color = get_sub_field('background_color');
 $style = get_sub_field('style'); 
@@ -15,9 +17,9 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs'); ?>
         <?php if($use_breadcrumbs == 'yes') : ?>
             <?php get_template_part( 'template-parts/modules/breadcrumbs' ); ?>
         <?php endif; ?>
-        <h1 class="header header--super header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
+        <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
         <h2 class="header header--secondary header--light fontw-500"><?php echo $subheader; ?></h2>
-        <?php get_template_part( '/template-parts/component/component_button' ); ?>
+        <?php get_template_part( '/template-parts/components/component_button' ); ?>
     </div>
 </section>
 
@@ -30,7 +32,7 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs'); ?>
         <?php endif; ?>
         <h1 class="header header--main hero--underline"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
         <?php echo $intro; ?>
-        <?php get_template_part( '/template-parts/component/component_button' ); ?>
+        <?php get_template_part( '/template-parts/components/component_button' ); ?>
     </div>
 </section>
 
@@ -40,12 +42,16 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs'); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
-                <h2 class="header header--secondary color-secondary-light"><?php echo $subheader; ?></h2>
-                <?php get_template_part( '/template-parts/component/component_button' ); ?>
+                <div class="hero__content">
+                    <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
+                    <h2 class="header header--secondary header--light header--font-secondary"><?php echo $subheader; ?></h2>
+                    <div class="hero__button-wrapper">
+                        <?php get_template_part( '/template-parts/components/component_button' ); ?>
+                    </div>
+                </div>
             </div>
             <div class="hero__image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="200">
-                <img src="<?php echo get_template_directory_uri(  ) . '/dist/assets/img/hero-img.png'; ?>" class="img-fluid animate--infinite" alt="">
+                <img src="<?php if($image) {echo $image;} else{ echo get_template_directory_uri(  ) . '/dist/assets/img/hero-img.png'; } ?>" class="img-fluid <?php if($floating == 'enabled') {echo 'animate--infinite';} ?>  " alt="">
             </div>
         </div>
     </div>

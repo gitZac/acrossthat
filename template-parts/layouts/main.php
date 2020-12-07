@@ -10,13 +10,20 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'team' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/team' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_team' ); ?>
 
         <?php endif; ?>
 
         <?php if(get_row_layout() == 'cta' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/cta' ); ?>
+
+        <?php endif; ?>
+
+
+        <?php if(get_row_layout() == 'custom_post_type' ) : ?>
+
+            <?php get_template_part( 'template-parts/modules/layout_cpt' ); ?>
 
         <?php endif; ?>
 
@@ -38,9 +45,9 @@ if(have_rows('block_editor') ) : ?>
     
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'icon_group' ) : ?>
+        <?php if(get_row_layout() == 'icon_list' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/icon-list_layout' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_icon-list' ); ?>
     
         <?php endif; ?>
 
@@ -59,12 +66,6 @@ if(have_rows('block_editor') ) : ?>
         <?php if(get_row_layout() == 'global_carousel' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/carousel' ); ?>
-    
-        <?php endif; ?>
-
-        <?php if(get_row_layout() == 'counterup' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/counterup' ); ?>
     
         <?php endif; ?>
 

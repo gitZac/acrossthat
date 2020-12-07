@@ -5,15 +5,18 @@
 @import './base/general';
 @import './base/typography';
 @import './layout/sections';
+@import './layout/container';
 @import './layout/footer';
 @import './layout/header';
 @import './modules/cards';
 @import './modules/gforms';
 @import './modules/forms';
+@import './modules/faq';
 @import './modules/icons';
 @import './modules/entry-content';
 @import './modules/switchbox';
 @import './modules/button';
+@import './modules/icons';
 @import './modules/icon-list';
 @import './modules/breadcrumbs';
 @import './modules/hero';
@@ -21,7 +24,6 @@
 @import './modules/carousel';
 @import './modules/portfolio';
 @import './modules/about';
-@import './modules/counts';
 @import './modules/contact';
 @import './modules/lists';
 @import './modules/scrapbook';
