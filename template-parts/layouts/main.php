@@ -32,7 +32,6 @@ if(have_rows('block_editor') ) : ?>
 
         <?php endif; ?>
 
-
         <?php if(get_row_layout() == 'custom_post_type' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/layout_cpt' ); ?>
@@ -41,7 +40,7 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'hover_box' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/scrapbook_layout' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_scrapbook' ); ?>
     
         <?php endif; ?>
 
