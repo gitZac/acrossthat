@@ -76,7 +76,7 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'faq' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/faq' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_faq' ); ?>
     
         <?php endif; ?>
 

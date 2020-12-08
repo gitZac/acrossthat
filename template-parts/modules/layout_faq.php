@@ -1,5 +1,4 @@
 <?php if(have_rows('fp_faq') ) : ?>
-
     <section id="faq" class="faq section-bg">
       <div class="container">
         <div class="section-title">
@@ -13,8 +12,6 @@
                 </div>
             <?php endwhile; ?>
         </div>
-
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
+    </section>
 <?php endif; ?>
