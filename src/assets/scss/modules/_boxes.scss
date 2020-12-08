@@ -1,7 +1,4 @@
 .boxes{
-   .page-id-41 &__container{
-        margin-bottom:5rem;
-    }
     &__cta-title{
         padding-bottom:30px;
     }
@@ -12,6 +9,10 @@
     }
     &__cta-text{
         font-size: 1.4rem;
+    }
+
+    &__wrapper{
+        padding: 40px 0;
     }
     &__content{
     

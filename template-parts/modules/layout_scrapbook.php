@@ -1,6 +1,7 @@
 <?php
     $section_bg = get_sub_field('section_bg');
     $section_title = get_sub_field('section_title_hb');
+    $section_description = get_sub_field('section_description');
     $cols = get_sub_field('col'); ?>
 
 <section class="scrapbook <?php if($section_bg) { echo $section_bg; } ?>">
@@ -9,6 +10,7 @@
         <?php if($section_title) : ?>
             <div class="section-title">
                 <h2><?php echo $section_title; ?></h2>
+                <p><?php echo $section_description; ?></p>
             </div>
         <?php endif; ?>
             <div class="row">
@@ -33,7 +35,7 @@
                                 </div>
                                 <div class="abs-wrapper abs-wrapper--title-center abs-wrapper--center-bottom pad-tb-1">
                                     <h2 class="animate--fast  scrapbook__title title scrapbook__title--prorehab"><?php echo $title; ?></h2>
-                                    <p class="scrapbook__location animate--fast fade-in zoom-in--left subtitle is-4"><?php echo $description; ?></p>
+                                    <p class="scrapbook__cta animate--fast fade-in zoom-in--left subtitle is-4"><?php echo $description; ?></p>
                                 </div>
                             </div>
                         </div> 
@@ -43,5 +45,4 @@
             </div>
         </div>
     </div>
-
 </section>
