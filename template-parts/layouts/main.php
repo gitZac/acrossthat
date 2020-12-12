@@ -82,7 +82,7 @@ if(have_rows('block_editor') ) : ?>
 
         <?php if(get_row_layout() == 'process' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/process' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_process' ); ?>
     
         <?php endif; ?>
 
