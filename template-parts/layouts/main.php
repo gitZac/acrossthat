@@ -20,9 +20,9 @@ if(have_rows('block_editor') ) : ?>
     
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'content_block' ) : ?>
+        <?php if(get_row_layout() == 'content_editor' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/entry-content_layout' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_content-editor' ); ?>
 
         <?php endif; ?>
 
