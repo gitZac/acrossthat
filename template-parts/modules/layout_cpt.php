@@ -30,4 +30,9 @@ set_query_var('layout_style', $layout_style);?>
         </div>
     </div>
 </section>
+<?php elseif($post_type == 'carousel') : ?>
+
+<section class="carousel">
+    <?php get_template_part( 'inc/loop/loop', 'carousel' ); ?>
+</section>
 <?php endif; ?>

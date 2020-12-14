@@ -1,13 +1,8 @@
-/*--------------------------------------------------------------
-# Carousel Section
---------------------------------------------------------------*/
-
 .carousel{
   width: 100%;
   height: calc(95vh - 114px);
   padding: 0;
   overflow: hidden;
-
 
   .carousel-item {
     width: 100%;
@@ -31,7 +26,6 @@
     overflow: hidden;
   }
 
-
   .carousel-container {
     display: flex;
     justify-content: center;
@@ -46,26 +40,22 @@
 
   .carousel-content {
     text-align: left;
+    margin: 0 auto;
+    @include for-tablet-portrait-up{
+      width: 90%;
+    }
   }
 
   @media (max-width: 992px) {
     &, .carousel-item { 
       height: calc(100vh - 70px);
     }
-    .carousel-content.container {
-      padding: 0 50px;
-    }
   }
 
-  // h2 {
-  //   color: $white;
-  //   margin-bottom: 30px;
-  //   font-size: 48px;
-  //   font-weight: 900;
-  // }
-
   p {
-    width: 80%;
+    @include for-tablet-portrait-up{
+      width: 80%;
+    }
     animation-delay: 0.4s;
     color: #fff;
     font-size:1.4rem;
@@ -101,6 +91,9 @@
   }
 
   .carousel-control-prev, .carousel-control-next {
+    @include for-phone-only{
+      display:none;
+    }
     width: 10%;
   }
 
