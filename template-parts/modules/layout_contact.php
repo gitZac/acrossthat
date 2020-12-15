@@ -30,7 +30,11 @@ $style = get_sub_field('style'); ?>
                 </div>
             <?php endwhile; ?>
             <?php echo $map; ?>
-            <?php get_template_part('/template-parts/forms/contact'); ?>
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+                <?php echo do_shortcode( '[gravityform id="1" title="true" description="true"]' ); ?>
+            </div>
+
+
         </div>
       </div>
     </section>
@@ -65,36 +69,7 @@ $style = get_sub_field('style'); ?>
       </div>
     
       <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="name">Your Name</label>
-              <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validate"></div>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="name">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="name">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
-          </div>
-          <div class="form-group">
-            <label for="name">Message</label>
-            <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
+        <?php echo do_shortcode( '[gravityform id="3" title="true" description="true"]' ); ?>
       </div>
     </div>
     
