@@ -124,19 +124,6 @@
     }
   }
 
-  .gfield{
-    // padding: .375rem .75rem;
-    // font-size: 1rem;
-    // font-weight: 400;
-    // line-height: 1.5;
-    // color: #495057;
-    // background-color: #fff;
-    // background-clip: padding-box;
-    // border: 1px solid #ced4da;
-    // border-radius: .25rem;
-    // transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-
   input, textarea {
     height: 44px;
     display: block;
@@ -172,98 +159,4 @@
       background: darken($primary, 10);
     }
   }
-}
-
-
-.php-email-form {
-  width: 100%;
-  border-top: 3px solid $primary;;
-  border-bottom: 3px solid $primary;;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0 , 0, .12);
-
-  .form-group {
-    padding-bottom: 8px;
-  }
-
-  .validate {
-    display: none;
-    color: red;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-  }
-  
-  .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-    & br + br {
-      margin-top: 25px;
-    }
-  }
-  
-  .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-
-  .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-
-    &:before {
-      content: "";
-      display: inline-block;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      margin: 0 10px -6px 0;
-      border: 3px solid #18d26e;
-      border-top-color: #eee;
-      animation: animate-loading 1s linear infinite;
-    }
-
-  }
-
-  input, textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-    border-radius: 4px;
-    &:focus {
-      border-color: $primary;
-    }
-  }
-
-  input {
-    height: 44px;
-  }
-
-  textarea {
-    padding: 10px 12px;
-  }
-
-  button[type="submit"] {
-    background: $primary;
-    border: 0;
-    padding: 12px 34px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 50px;
-    &:hover {
-      background: darken($primary, 10);
-    }
-  }
-
 }
