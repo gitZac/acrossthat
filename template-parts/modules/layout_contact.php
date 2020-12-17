@@ -2,7 +2,8 @@
 $section_bg = get_sub_field('section_background');
 $section_title = get_sub_field('section_title');
 $section_description = get_sub_field('section_description'); 
-$map = get_sub_field('contact_map'); 
+$map = get_sub_field('contact_map');
+$form_shortcode = get_sub_field('form_shortcode');
 $style = get_sub_field('style'); ?>
 
 <?php if($style == 'default' ) { ?>
@@ -31,9 +32,8 @@ $style = get_sub_field('style'); ?>
             <?php endwhile; ?>
             <?php echo $map; ?>
             <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-                <?php echo do_shortcode( '[gravityform id="1" title="true" description="true"]' ); ?>
+              <?php echo do_shortcode( $form_shortcode ); ?>
             </div>
-
 
         </div>
       </div>
@@ -69,7 +69,7 @@ $style = get_sub_field('style'); ?>
       </div>
     
       <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-        <?php echo do_shortcode( '[gravityform id="3" title="true" description="true"]' ); ?>
+        <?php echo do_shortcode( $form_shortcode ); ?>
       </div>
     </div>
     

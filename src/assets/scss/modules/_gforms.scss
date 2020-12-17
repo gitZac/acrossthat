@@ -118,24 +118,53 @@
   input, textarea {
     box-shadow: none;
     font-size: 14px;
-    border-radius: 4px !important;
+    border-radius: 4px;
     &:focus {
       border-color: $primary;
     }
   }
 
-  input {
+  .gfield{
+    // padding: .375rem .75rem;
+    // font-size: 1rem;
+    // font-weight: 400;
+    // line-height: 1.5;
+    // color: #495057;
+    // background-color: #fff;
+    // background-clip: padding-box;
+    // border: 1px solid #ced4da;
+    // border-radius: .25rem;
+    // transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  input, textarea {
     height: 44px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .gform_footer{
+    text-align: center;
   }
 
   textarea {
     padding: 10px 12px;
   }
 
-  button[type="submit"] {
+  .gform_button.button {
     background: $primary;
     border: 0;
-    padding: 12px 34px;
+    padding: 10px 34px;
     color: #fff;
     transition: 0.4s;
     border-radius: 50px;
@@ -144,6 +173,7 @@
     }
   }
 }
+
 
 .php-email-form {
   width: 100%;
@@ -203,6 +233,7 @@
       border-top-color: #eee;
       animation: animate-loading 1s linear infinite;
     }
+
   }
 
   input, textarea {
@@ -234,4 +265,5 @@
       background: darken($primary, 10);
     }
   }
+
 }

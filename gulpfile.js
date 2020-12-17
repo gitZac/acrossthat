@@ -151,7 +151,7 @@ function copyDependencies() {
 // Init live server browser sync
 function initBrowserSync(done) {
   browserSync.init({
-    proxy: 'http://dev.ax/',
+    proxy: 'http://localhost:10043/',
     port: 3000,
     notify: false
   });
