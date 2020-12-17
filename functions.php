@@ -53,7 +53,7 @@ if ( ! function_exists( 'ax__setup' ) ) :
 				'menu-1' => esc_html__( 'Primary', 'ax_' ),
 				'menu-topbar-social' => esc_html__( 'Social Links', 'ax_' ),
 				'social-2' => esc_html__( 'Social 2', 'ax_' ),
-			),
+			)
 		);
 
 		/*
