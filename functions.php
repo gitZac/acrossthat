@@ -251,3 +251,13 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();	
 }
 
+//======================================================================
+// Checking if ACF is Activated
+//======================================================================
+function acf_activated() {
+	if (function_exists('get_field')) {
+		return true;
+	}
+	return false;
+}
+
