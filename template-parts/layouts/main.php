@@ -26,12 +26,6 @@ if(have_rows('block_editor') ) : ?>
 
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'cta' ) : ?>
-
-            <?php get_template_part( 'template-parts/modules/cta' ); ?>
-
-        <?php endif; ?>
-
         <?php if(get_row_layout() == 'custom_post_type' ) : ?>
 
             <?php get_template_part( 'template-parts/modules/layout_cpt' ); ?>
@@ -44,9 +38,9 @@ if(have_rows('block_editor') ) : ?>
     
         <?php endif; ?>
 
-        <?php if(get_row_layout() == 'hover_card' ) : ?>
+        <?php if(get_row_layout() == 'cards' ) : ?>
 
-            <?php get_template_part( 'template-parts/modules/card_layout' ); ?>
+            <?php get_template_part( 'template-parts/modules/layout_cards' ); ?>
     
         <?php endif; ?>
 
