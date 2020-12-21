@@ -2,9 +2,10 @@
     $section_title = get_sub_field('section_title');
     $section_description = get_sub_field('section_description');
     $section_bg = get_sub_field('section_background'); 
-    $style = get_sub_field('style'); ?>
+    $style = get_sub_field('style'); 
+    global $section_count;?>
    
-    <section class="icon-list <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
+    <section id="section-<?php echo $section_count; ?>" class="icon-list <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
         <div class="container">
             <?php if ($section_title) : ?>
             <div class="section-title">

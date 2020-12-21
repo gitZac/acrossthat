@@ -1,11 +1,12 @@
 <?php
-    $section_title = get_sub_field('about_section_title');
-    $summary = get_sub_field('company_summary');
-    $about_image = get_sub_field('about_image');
-    $embed_video = get_sub_field('embed_video');
-    $video = get_sub_field('video_play_button'); ?>
+$section_title = get_sub_field('about_section_title');
+$summary = get_sub_field('company_summary');
+$about_image = get_sub_field('about_image');
+$embed_video = get_sub_field('embed_video');
+$video = get_sub_field('video_play_button'); 
+global $section_count; ?>
 
-<section class="about">
+<section id="section-<?php echo $section_count; ?>" class="about">
     <div class="container box-shadow">
         <div class="row no-gutters">
             <div class="col-lg-6 about__video-box">

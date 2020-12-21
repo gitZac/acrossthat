@@ -2,9 +2,10 @@
     $section_bg = get_sub_field('section_bg');
     $section_title = get_sub_field('section_title_hb');
     $section_description = get_sub_field('section_description');
-    $cols = get_sub_field('col');  ?>
+    $cols = get_sub_field('col');  
+    global $section_count; ?>
 
-<section class="scrapbook <?php if($section_bg) { echo $section_bg; } ?>">
+<section id="section-<?php echo $section_count; ?>" class="scrapbook <?php if($section_bg) { echo $section_bg; } ?>">
     <div class="scrapbook__inner">
         <div class="container-fluid">
         <?php if($section_title) : ?>

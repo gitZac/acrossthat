@@ -1,4 +1,6 @@
-<section class="carousel">
+<?php 
+global $section_count; ?>
+<section id="section-<?php echo $section_count; ?>" class="carousel">
     <?php if(have_rows('carousel') ) : ?>
         <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>

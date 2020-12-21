@@ -4,11 +4,12 @@ $section_title = get_sub_field('section_title');
 $section_description = get_sub_field('section_description'); 
 $map = get_sub_field('contact_map');
 $form_shortcode = get_sub_field('form_shortcode');
-$style = get_sub_field('style'); ?>
+$style = get_sub_field('style'); 
+global $section_count;?>
 
 <?php if($style == 'default' ) { ?>
 
-    <section class="contact <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
+    <section id="section-<?php echo $section_count; ?> class="contact <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
       <div class="container">
       <?php if($section_title) : ?>
         <div class="section-title">

@@ -1,9 +1,10 @@
 <?php $section_bg = get_sub_field('section_bg');
   $section_title = get_sub_field('section_title');
-  $section_description = get_sub_field('section_description'); ?>
+  $section_description = get_sub_field('section_description'); 
+  global $section_count; ?>
 
 <?php if(have_rows('our_process') ) : ?>
-    <section class="about-lists <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
+    <section id="section-<?php echo $section_count; ?>" class="about-lists <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
       <div class="container">
       <?php if($section_title) : ?>
         <div class="section-title">

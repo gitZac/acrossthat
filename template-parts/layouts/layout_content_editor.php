@@ -2,9 +2,11 @@
 $section_bg = get_sub_field('section_bg');
 $section_title = get_sub_field('section_title');
 $section_description = get_sub_field('section_description'); 
-$content = get_sub_field('custom_content'); ?>
+$content = get_sub_field('custom_content');
+global $section_count;
+?>
 
-<section class="entry-content entry-content--no-hero <?php if($section_bg) { echo $section_bg; } ?>">
+<section id="section-<?php echo $section_count; ?>" class="entry-content entry-content--no-hero <?php if($section_bg) { echo $section_bg; } ?>">
     <div class="container" data-aos="fade-up" data-aos-delay="500">
         <?php if ($section_title) : ?>
         <div class="section-title">

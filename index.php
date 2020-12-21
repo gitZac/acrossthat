@@ -13,6 +13,7 @@
  */
 
 get_header();
+global $section_count;
 ?>
 	<main id="primary" class="site-main">
 

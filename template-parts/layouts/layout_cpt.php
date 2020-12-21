@@ -6,12 +6,13 @@ $post_type = get_sub_field('post_type');
 $section_bg = get_sub_field('section_bg');
 $background_class = "section-bg"; 
 $layout_style = get_sub_field('layout_style');
+global $section_count;
 
 //Make var global, so it can be queried in partial
 set_query_var('layout_style', $layout_style);?>
 
 <?php if($post_type == 'team') : ?>
-<section class="team team--<?php echo $layout_style; ?> <?php if($section_bg) { echo $background_class; } ?>">
+<section id="section-<?php echo $section_count; ?>" class="team team--<?php echo $layout_style; ?> <?php if($section_bg) { echo $background_class; } ?>">
     <div class="container">
         <?php if($title) : ?>
         <div class="section-title">
@@ -32,7 +33,7 @@ set_query_var('layout_style', $layout_style);?>
 </section>
 <?php elseif($post_type == 'carousel') : ?>
 
-<section class="carousel">
+<section id="section-<?php echo $section_count; ?>" class="carousel">
     <?php get_template_part( 'inc/loop/loop', 'carousel' ); ?>
 </section>
 <?php endif; ?>

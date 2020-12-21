@@ -1,8 +1,9 @@
 <?php 
   $section_bg = get_sub_field('section_bg');
   $section_title = get_sub_field('section_title');
-  $section_description = get_sub_field('section_description'); ?>
-  <section class="faq section-bg <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
+  $section_description = get_sub_field('section_description'); 
+  global $section_count; ?>
+  <section id="section-<?php echo $section_count; ?>" class="faq section-bg <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
     <div class="container">
       <?php if($section_title) : ?>
         <div class="section-title">
