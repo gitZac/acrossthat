@@ -25,20 +25,10 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" style="display:none;" href="#primary"><?php esc_html_e( 'Skip to content', 'ax_' ); ?></a>
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="topbar__icon icofont-address-book"></i> <?php the_field('address', 'option'); ?>
-        <i class="topbar__icon icofont-envelope"></i><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
-        <i class="topbar__icon icofont-phone"></i><?php the_field('phone', 'option'); ?>
-      </div>
-      <div class="social-links float-right">
-        <?php get_template_part('/inc/loop/loop-options'); ?>
-      </div>
-    </div>
-  </section>
-  <header id="header">
+  <a class="skip-link screen-reader-text" style="display:none;" href="#primary"><?php esc_html_e( 'Skip to content', 'ax_' ); ?></a>
+  <?php get_template_part('template-parts/partials/header/navigation/navigation', 'topbar'); ?>
+
+  <header class="main-nav--default" id="header">
     <div class="container">
       <div class="logo float-left">
         <?php the_custom_logo();?>
