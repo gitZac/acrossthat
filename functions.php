@@ -7,6 +7,13 @@
  * @package AcrossThat
  */
 
+	/**
+	 * GLOBAL VARIABLES
+	 *
+	 */
+
+	 global $section_count;
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -249,5 +256,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();	
+}
+
+//======================================================================
+// Checking if ACF is Activated
+//======================================================================
+function acf_activated() {
+	if (function_exists('get_field')) {
+		return true;
+	}
+	return false;
 }
 

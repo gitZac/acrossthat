@@ -13,8 +13,8 @@
  */
 
 get_header();
+global $section_count;
 ?>
-
 	<main id="primary" class="site-main">
 
 		<?php
@@ -50,7 +50,7 @@ get_header();
 		endif;
 		?>
 
-	</main><!-- #main -->
+	</main>
 
 <?php
 get_sidebar();

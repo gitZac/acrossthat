@@ -2,9 +2,11 @@
 $section_bg = get_sub_field('section_bg');
 $section_title = get_sub_field('section_title');
 $section_description = get_sub_field('section_description');
-$columns = get_sub_field('cols'); ?>
+$columns = get_sub_field('cols'); 
+global $section_count;
+?>
 
-<section class="axcards <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
+<section id="section-<?php echo $section_count; ?>" class="axcards <?php if($section_bg == 'yes') { echo 'section-bg'; } ?>">
     <div class="axcards__wrapper">
         <div class="container-fluid">
         <?php if($section_title) : ?>
