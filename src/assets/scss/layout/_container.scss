@@ -1,5 +1,4 @@
 section .container, header .container{
-    max-width: 640px;
     
     @include for-tablet-portrait-up {
         max-width: 1165px;
@@ -7,4 +6,8 @@ section .container, header .container{
     @include for-desktop-up {
         max-width: 1340px;
     }
+}
+
+section .container{
+    overflow: hidden;
 }
