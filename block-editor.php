@@ -7,10 +7,7 @@
  * @package AcrossThat
  */
 
-get_header();
-
-$subtitle = get_field('page_subtitle'); 
-$header_active = get_field('disable_default_header'); ?>
+get_header();?>
 
 <main id="main">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
