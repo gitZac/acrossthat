@@ -1,4 +1,4 @@
-<section class="topbar" class="d-none d-lg-block">
+<section class="topbar d-none d-lg-block">
     <div class="container clearfix">
         <div class="contact-info float-left">
         <i class="topbar__icon icofont-address-book"></i> <?php the_field('address', 'option'); ?>

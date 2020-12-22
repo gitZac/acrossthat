@@ -26,22 +26,5 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
   <a class="skip-link screen-reader-text" style="display:none;" href="#primary"><?php esc_html_e( 'Skip to content', 'ax_' ); ?></a>
-  <?php get_template_part('template-parts/partials/header/navigation/navigation', 'topbar'); ?>
-
-  <header class="main-nav--default" id="header">
-    <div class="container">
-      <div class="logo float-left">
-        <?php the_custom_logo();?>
-      </div>
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <?php
-          wp_nav_menu(
-            array(
-              'theme_location' => 'menu-1',
-              'menu_id'        => 'primary-menu',
-              'container'		=> 'false',
-            )
-          ); ?>
-      </nav>
-    </div>
-  </header>
+  <?php //get_template_part('template-parts/partials/header/topbar'); ?>
+  <?php get_template_part('template-parts/partials/header/navigation/navigation', 'trans'); ?>
