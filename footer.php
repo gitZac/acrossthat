@@ -6,12 +6,9 @@
  *
  * @package AcrossThat
  */
-
 ?>
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
+  <footer class="footer" id="footer">
+    <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -23,59 +20,39 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </div> -->
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <?php dynamic_sidebar( 'footer-area-1' ); ?>
-
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
             <?php dynamic_sidebar( 'footer-area-2' ); ?>
-
           </div>
-
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <h4>Socialize</h4>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <a href="/"><img src="<?php the_field('footer_logo', 'option'); ?>" alt="" class="img-fluid"></a>
+            <p><?php the_field('address', 'option'); ?></p>
+            <p><strong>Phone:</strong> <?php the_field('phone', 'option'); ?></p>
+            <p><strong>Email:</strong> <?php the_field('email', 'option'); ?></p>
             <div class="social-links mt-3">
-              <?php get_template_part('/template-parts/loop/loop-options'); ?>
-
+              <?php get_template_part('/inc/loop/loop-options'); ?>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        &copy; Copyright <?php echo date('Y'); ?> <strong><span>AcrossThat Digital Studios</span></strong>. All Rights Reserved
       </div>
-      
     </div>
-  </footer><!-- End Footer -->
-
-
+  </footer>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

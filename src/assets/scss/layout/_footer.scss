@@ -1,13 +1,14 @@
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
+.footer {
   font-size: 14px;
-  background: $secondary;
+  background: $primary;
+
+  .sub-menu{
+    display:none;
+  }
 
   .footer-newsletter {
     padding: 50px 0;
-    background: lighten($secondary, 61);
+    background: lighten($primary, 61);
     text-align: center;
     font-size: 15px;
     color: $default;
@@ -18,7 +19,7 @@
       padding: 0;
       line-height: 1;
       font-weight: 600;
-      color: $secondary;
+      color: $primary;
     }
 
     form {
@@ -69,7 +70,7 @@
         line-height: 1;
         text-transform: uppercase;
         font-weight: 600;
-        color: $secondary;
+        color: $primary;
       }
 
       p {
@@ -85,7 +86,7 @@
     h4 {
       font-size: 16px;
       font-weight: bold;
-      color: $secondary;
+      color: $primary;
       position: relative;
       padding-bottom: 12px;
     }
