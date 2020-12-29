@@ -1,4 +1,4 @@
-section .container, header .container{
+section .container, header .container, footer .container{
     
     @include for-tablet-portrait-up {
         max-width: 1165px;
