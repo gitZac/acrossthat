@@ -1,4 +1,5 @@
-.search-form{
+// HEADER FORM
+header .search-form{
     .fas{
         input{display:none;}
     }
@@ -9,7 +10,7 @@
         color: #fff;
     }
     input.search-field::placeholder{
-        color:#fff;
+        color:rgba(255, 255, 255, 0.507);
         transition: 0.3s;
         font-size: 15px;
         letter-spacing: 0.5px;
@@ -29,5 +30,81 @@
 #Search::-webkit-search-cancel-button{
     color:red;
     display:none;
-    
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+// MAIN SEARCH
+
+.search--main {
+    background: lighten($secondary, 61);
+    text-align: center;
+    font-size: 15px;
+    color: $default;
+    input#search {
+        width: 100%;
+        border: none;
+    }
+
+    form {
+      background: #fff;
+      padding: 6px 10px;
+      position: relative;
+      border-radius: 50px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+      text-align: left;
+
+      input[type="email"] {
+        border: 0;
+        padding: 4px 8px;
+        width: calc(100% - 100px);
+      }
+
+      input[type="submit"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0;
+        background: none;
+        font-size: 16px;
+        padding: 0 20px;
+        background: $primary;
+        color: $white;
+        transition: 0.3s;
+        border-radius: 50px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+        &:hover {
+          background: darken($primary, 10);
+        }
+      }
+    }
+  }
+
+  .results{
+      article{
+          padding: 25px 0;
+          width:50%;
+          margin: 0 auto;
+      }
+  }
+
+  section.page-header{
+      max-width: 75%;
+      margin: 0 auto;
+  }
