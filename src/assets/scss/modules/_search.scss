@@ -1,0 +1,33 @@
+.search-form{
+    .fas{
+        input{display:none;}
+    }
+    input.search-field{
+        border:none;
+        width: 100px;
+        background-color:transparent;
+        color: #fff;
+    }
+    input.search-field::placeholder{
+        color:#fff;
+        transition: 0.3s;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+    }
+    input.search-field:focus{
+        outline: none;
+    }
+
+    input::-webkit-search-cancel-button{
+        font-size: 22px;
+        color:red;
+    }
+}
+
+#Search::-webkit-search-cancel-button{
+    color:red;
+    display:none;
+    
+}
