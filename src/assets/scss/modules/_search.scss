@@ -1,0 +1,132 @@
+// HEADER FORM
+header .search-form{
+    .fas{
+        input{display:none;}
+    }
+    input.search-field{
+        border:none;
+        width: 100px;
+        background-color:transparent;
+        color: #fff;
+    }
+    input.search-field::placeholder{
+        color:rgba(255, 255, 255, 0.507);
+        transition: 0.3s;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+    }
+    input.search-field:focus{
+        outline: none;
+    }
+}
+
+#Search::-webkit-search-cancel-button{
+    display:none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+// MOBILE SEARCH
+
+.mobile-nav .search-form{
+    .fas{
+        input{display:none;}
+    }
+    .fas.fa-search{
+        color:$primary;
+    }
+    input.search-field{
+        border:none;
+        width: 100px;
+        background-color:transparent;
+        color: $primary;
+    }
+    input.search-field::placeholder{
+        color:rgba($primary, 0.507);
+        transition: 0.3s;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+    }
+    input.search-field:focus{
+        outline: none;
+    }
+}
+
+// MAIN SEARCH
+
+.search--main {
+    background: lighten($secondary, 61);
+    text-align: center;
+    font-size: 15px;
+    color: $default;
+    input#search {
+        width: 100%;
+        border: none;
+    }
+
+    form {
+      background: #fff;
+      padding: 6px 10px;
+      position: relative;
+      border-radius: 50px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+      text-align: left;
+
+      input[type="email"] {
+        border: 0;
+        padding: 4px 8px;
+        width: calc(100% - 100px);
+      }
+
+      input[type="submit"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0;
+        background: none;
+        font-size: 16px;
+        padding: 0 20px;
+        background: $primary;
+        color: $white;
+        transition: 0.3s;
+        border-radius: 50px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+        &:hover {
+          background: darken($primary, 10);
+        }
+      }
+    }
+  }
+
+  .results{
+      article{
+          padding: 25px 0;
+          width:50%;
+          margin: 0 auto;
+      }
+  }
+
+  section.page-header{
+      max-width: 75%;
+      margin: 0 auto;
+  }

@@ -8,19 +8,6 @@
  */
 ?>
   <footer class="footer" id="footer">
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -31,7 +18,7 @@
             <?php dynamic_sidebar( 'footer-area-2' ); ?>
           </div>
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Socialize</h4>
+            <?php dynamic_sidebar( 'footer-area-3' ); ?>
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
             <a href="/"><img src="<?php the_field('footer_logo', 'option'); ?>" alt="" class="img-fluid"></a>
