@@ -1,0 +1,41 @@
+.topbar__icon{
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+  
+  .topbar {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-family: $font-default;
+    
+    .contact-info {
+      a {
+        line-height: 1;
+        color: $default;
+        transition: 0.3s;
+        &:hover {
+          color: $primary;
+        }
+      }
+  
+      i {
+        color: $primary;
+        padding: 4px;
+      }
+    }
+  
+    .social-links {
+      a {
+        color: $primary;
+        padding: 4px 12px;
+        display: inline-block;
+        line-height: 1px;
+        transition: 0.3s;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }

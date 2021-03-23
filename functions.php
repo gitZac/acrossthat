@@ -7,6 +7,13 @@
  * @package AcrossThat
  */
 
+	/**
+	 * GLOBAL VARIABLES
+	 *
+	 */
+
+	 global $section_count;
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -53,7 +60,7 @@ if ( ! function_exists( 'ax__setup' ) ) :
 				'menu-1' => esc_html__( 'Primary', 'ax_' ),
 				'menu-topbar-social' => esc_html__( 'Social Links', 'ax_' ),
 				'social-2' => esc_html__( 'Social 2', 'ax_' ),
-			),
+			)
 		);
 
 		/*
@@ -209,7 +216,7 @@ function ax__scripts() {
 
 	//User Scripts
 	wp_enqueue_script( 'ax_-navigation', get_template_directory_uri() . '/dist/assets/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'ax_-userJS', get_template_directory_uri() . '/dist/assets/js/main.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'ax_-userJS', get_template_directory_uri() . '/dist/assets/js/main.js', array('jquery'), _S_VERSION, true );
 
 	// wp_enqueue_script( 'ax_-customizer', get_template_directory_uri() . '/dist/assets/js/customizer.js', array(), _S_VERSION, true );
 
@@ -251,3 +258,12 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();	
 }
 
+//======================================================================
+// Checking if ACF is Activated
+//======================================================================
+function acf_activated() {
+	if (function_exists('get_field')) {
+		return true;
+	}
+	return false;
+}

@@ -1,4 +1,6 @@
-<section class="carousel">
+<?php 
+global $section_count; ?>
+<section id="section-<?php echo $section_count; ?>" class="carousel">
     <?php if(have_rows('carousel') ) : ?>
         <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
@@ -10,30 +12,18 @@
                     $button_link = get_sub_field('button_link');
                     $slide_button_text = get_sub_field('slide_button_text'); 
                     $bg_image = get_sub_field('background_image'); ?>
-
                     <div class="carousel-item <?php echo $i==0 ? 'active' : ''; $i++; ?>" style="background-image: url(<?php echo $bg_image; ?>);">
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="header header--main header--light animated fadeInDown fontw-700"><?php echo $headline;?></h2>
                                 <p class="animated fadeInUp"><?php echo $slide_description; ?></p>
-                                <div class="ax-btn">
-                                    <a href="<?php echo $button_link; ?>" class="btn--rect animated fadeInUp scrollto"><?php echo $slide_button_text; ?></a>
-                                </div>
+                                <?php get_template_part( '/template-parts/components/component_button' ); ?>
                             </div>
                         </div>
                     </div>
-
                 <?php endwhile; ?>
-            </div> <!-- End Carousel Inner-->
-
-            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div> <!-- End Carousel Outer-->
+            </div> 
+            <?php get_template_part('/template-parts/partials/carousel/carousel', 'controls'); ?>
+        </div>
     <?php endif; ?>
-</section><!-- End Hero -->
+</section>

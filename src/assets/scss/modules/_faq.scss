@@ -1,19 +1,13 @@
-  /*--------------------------------------------------------------
-  # Frequently Asked Questions
-  --------------------------------------------------------------*/
   .faq  {
-  
     padding-bottom: 30px;
-  
     .faq-item {
       margin-bottom: 40px;
-  
       h4 {
         font-size: 20px;
         line-height: 28px;
         font-weight: 600;
         margin-bottom: 15px;
-        color: $secondary;
+        color: $primary;
       }
     }
   }

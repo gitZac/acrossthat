@@ -1,5 +1,4 @@
 .scrapbook{
-    color:#fff;
     &__inner{
         max-width: 1600px;
         margin: 0 auto;
@@ -14,6 +13,7 @@
         padding: 0 2rem;
         margin: 2px 0 0 2px;
         display:flex;
+        color:#fff;
     }
 
     &__card:after{
@@ -44,11 +44,16 @@
     }
 
     &__logo{
-        padding-right: 1rem;
+        padding: 2rem 2rem;
         z-index: 1;
         img{
             max-height: 7rem;
+            max-width: 250px;
         }
+    }
+
+    &__location{
+        color:#fff;
     }
 
     &__title{   
@@ -74,7 +79,6 @@
     p{
         margin:0;
         padding:0;
-        color:#fff;
     }
     i{
         text-align: center;
