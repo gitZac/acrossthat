@@ -23,10 +23,10 @@ global $section_count;
 					<?php get_template_part( 'template-parts/layouts/layout_' . $layout_type ); $section_count++; ?>
 				<?php endwhile; ?>
 			<?php endif; ?>    
-		</article><?php the_ID(); ?>
+		</article>
 	</main>
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();
 

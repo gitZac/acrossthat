@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Block Editor
+ * Template Name: Block Editor (Deprecated)
  * 
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
