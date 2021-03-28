@@ -12,6 +12,7 @@ $use_breadcrumbs = get_sub_field('use_breadcrumbs');
 $header_font_color = get_sub_field('header_font_color');
 $subheader_font_color = get_sub_field('subheader_font_color');
 $intro_font_color = get_sub_field('intro_font_color');
+$clip_path = get_sub_field('clip_path');
 global $section_count; ?>
 
 <?php if($style == 'background_image' ) {  ?>
@@ -42,7 +43,7 @@ global $section_count; ?>
 
 <?php } elseif($style == 'two_columns' ) { ?>
 
-<section id="section-<?php echo $section_count; ?>" class="hero hero--clip hero--two-col d-flex align-items-center" style="background:<?php echo $bg_color; ?>;">
+<section id="section-<?php echo $section_count; ?>" class="hero hero--clip-<?php echo $clip_path; ?> hero--two-col d-flex align-items-center" style="background:<?php echo $bg_color; ?>;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="200">

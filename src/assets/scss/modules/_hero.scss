@@ -15,8 +15,12 @@
     margin-top:0;
   }
 
-  &--clip{
+  &--clip-right{
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  }
+
+  &--clip-left{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   }
 
   &--underline::before{
@@ -57,7 +61,7 @@
   &__image{
     text-align: center;
     img{
-      width:80%;
+      width:100%;
       @include for-tablet-portrait-up{
         width: 60%;
       }

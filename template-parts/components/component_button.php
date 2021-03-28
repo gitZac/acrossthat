@@ -6,7 +6,8 @@
                     $link = get_sub_field('link');
                     $link_text = get_sub_field('link_text'); 
                     $bgcolor = get_sub_field('background_color');
-                    $text_color = get_sub_field('text_color'); ?>
+                    $text_color = get_sub_field('text_color'); 
+                    $icon = get_sub_field('icon'); ?>
                 <?php if($button_style == 'curved' )  { ?>
                     <a href="<?php echo $link; ?>" style="background:<?php echo $bgcolor; ?>; color:<?php echo $text_color;?>;" class="ax-btn--curved scrollto"><?php echo $link_text; ?></a>
                 <?php } elseif($button_style == 'play') { ?>
@@ -14,7 +15,7 @@
                 <?php } elseif($button_style == 'rect') { ?>
                     <a href="<?php echo $link; ?>" style="background:<?php echo $bgcolor; ?>; color:<?php echo $text_color;?>;" class="ax-btn--rect animated fadeInUp scrollto"> <?php echo $link_text; ?></a>
                 <?php } elseif($button_style == 'text') { ?>
-                    <a href="<?php echo $link; ?>" style="background:<?php echo $bgcolor; ?>; color:<?php echo $text_color;?>; border-bottom: 1px solid <?php echo $text_color;?>;" class="ax-btn--text animated fadeInUp scrollto"> <?php echo $link_text; ?></a>
+                    <a href="<?php echo $link; ?>" style="background:<?php echo $bgcolor; ?>; color:<?php echo $text_color;?>;" class="ax-btn--text animated fadeInUp scrollto"> <?php echo $link_text; ?> <i class="<?php echo $icon; ?>"></i></a>
                 <?php } ?>
             <?php endwhile; ?>
         <?php endif; ?>
