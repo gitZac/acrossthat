@@ -15,6 +15,10 @@
     margin-top:0;
   }
 
+  &--clip{
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  }
+
   &--underline::before{
     background-color: $primary;
     content: "";
@@ -37,6 +41,9 @@
     position: relative;
     padding: 1rem 0;
     max-width: 48rem;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 1.3rem;
   }
 
   &__content{
@@ -95,16 +102,22 @@
 --------------------------------------------------------------*/
 
 .hero.hero--two-col{
-    height:100vh;
+  .header--main{
+
+  }
+  height: auto;
+  padding-bottom: 20rem;
     @include for-desktop-up{
+      padding-top: 20rem;
       height: 80vh;
     }
     .hero__content{
       text-align: left;
     }
     .hero__button-wrapper{
-      text-align: center;
+      margin-bottom: 2.5rem;
       @include for-desktop-up{
+        margin-bottom: 2.5rem;
         text-align: left;
       }
     }

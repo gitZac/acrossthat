@@ -9,9 +9,10 @@ $bg_color = get_sub_field('background_color');
 $style = get_sub_field('style'); 
 $height = get_sub_field('height');
 $use_breadcrumbs = get_sub_field('use_breadcrumbs'); 
-global $section_count;
-
-?>
+$header_font_color = get_sub_field('header_font_color');
+$subheader_font_color = get_sub_field('subheader_font_color');
+$intro_font_color = get_sub_field('intro_font_color');
+global $section_count; ?>
 
 <?php if($style == 'background_image' ) {  ?>
 
@@ -41,13 +42,20 @@ global $section_count;
 
 <?php } elseif($style == 'two_columns' ) { ?>
 
-<section id="section-<?php echo $section_count; ?>" class="hero hero--two-col d-flex align-items-center" style="background:<?php echo $bg_color; ?>;">
+<section id="section-<?php echo $section_count; ?>" class="hero hero--clip hero--two-col d-flex align-items-center" style="background:<?php echo $bg_color; ?>;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-1 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                 <div class="hero__content">
-                    <h1 class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
-                    <h2 class="header header--secondary header--light header--font-secondary"><?php echo $subheader; ?></h2>
+                    <h1 <?php if($header_font_color) : ?> style="color: <?php echo $header_font_color; endif; ?>" class="header header--main header--light fontw-700"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
+                    <?php if($subheader) :  ?>
+                        <h2 <?php if($subheader_font_color) : ?> style="color: <?php echo $subheader_font_color; endif; ?>" class="header header--secondary header--light header--font-secondary"><?php echo $subheader; ?></h2>
+                    <?php endif; ?>
+                    <?php if($intro) : ?>
+                    <div  class="hero__intro">
+                        <p <?php if($intro_font_color) : ?> style="color: <?php echo $intro_font_color; endif; ?>"><?php echo $intro;?></p>
+                    </div>
+                    <?php endif; ?>
                     <div class="hero__button-wrapper">
                         <?php get_template_part( '/template-parts/components/component_button' ); ?>
                     </div>
