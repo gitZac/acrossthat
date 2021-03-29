@@ -1,5 +1,6 @@
-<?php if(get_sub_field( 'display_button' ) == 'yes') :  ?>
-    <div class="ax-btn">
+<?php if(get_sub_field( 'display_button' ) == 'yes') :  
+    $center_button = get_sub_field('center_button'); ?>
+    <div class="ax-btn <?php if($center_button) : echo "ax-btn--center"; endif;?>">
         <?php if (have_rows('button')) : ?>
             <?php while(have_rows('button') ) : the_row(); 
                     $button_style = get_sub_field('button_style');
