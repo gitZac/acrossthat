@@ -23,7 +23,7 @@
                 $link_text = get_sub_field('link_text');
                 $link_url = get_sub_field('link_url'); ?>
                 <div class="col-lg-<?php echo $cols; ?> col-sm-12 pad-none">
-                    <a href="<?php echo $link_url; ?>" class="scrapbook__link">
+                    <a <?php if(!empty($link_url) ) : ?> href="<?php echo $link_url; ?>" <?php endif; ?> class="scrapbook__link">
                         <div class="scrapbook__card" style="background-image:url(<?php echo $bg_image; ?>);">
                         <div class="scrapbook__shade"></div>
                             <div class="scrapbook__card-inner">
