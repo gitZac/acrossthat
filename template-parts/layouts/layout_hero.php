@@ -33,10 +33,10 @@ global $section_count; ?>
 <section id="section-<?php echo $section_count; ?>" class="hero hero--plain aos-init " data-aos="fade-up" data-aos-delay="500" id="the-content">
     <div class="container">
         <?php if($use_breadcrumbs == 'yes') : ?>
-            <?php get_template_part( 'template-parts/modules/breadcrumbs' ); ?>
+            <?php get_template_part( 'template-parts/layouts/breadcrumbs' ); ?>
         <?php endif; ?>
         <h1 class="header header--main hero--underline"><?php if(!empty($header) ){ echo $header; } else{ the_title( ); }  ?></h1>
-        <?php echo $intro; ?>
+        <p><?php echo $intro; ?></p>
         <?php get_template_part( '/template-parts/components/component_button' ); ?>
     </div>
 </section>
