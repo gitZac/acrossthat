@@ -11,6 +11,7 @@
             <div class="section-title">
                 <h2><?php echo $section_title; ?></h2>
                 <p><?php echo $section_description; ?></p>
+                <?php get_template_part( '/template-parts/components/component_button' ); ?>
             </div>
             <?php endif; ?>
             <?php if($style == 'list' ) {  ?>
