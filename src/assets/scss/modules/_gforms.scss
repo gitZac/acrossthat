@@ -115,7 +115,7 @@
     display:none;
   }
 
-  input, textarea {
+  input, textarea, select{
     box-shadow: none;
     font-size: 14px;
     border-radius: 4px;
@@ -124,7 +124,7 @@
     }
   }
 
-  input, textarea {
+  input, textarea, select {
     height: 44px;
     display: block;
     width: 100%;
@@ -132,12 +132,23 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #495057b0;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .gfield_total{
+    text-align: center;
+    border-radius: 3px;
+  }
+
+  .ginput_total{
+    color:$primary;
+    font-weight: bold;
+    font-size: 23px;
   }
 
   .gform_footer{
@@ -147,7 +158,6 @@
   textarea {
     padding: 10px 12px;
   }
-
   .gform_button.button {
     background: $primary;
     border: 0;
@@ -159,4 +169,34 @@
       background: darken($primary, 10);
     }
   }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #ced4da;;
+  -webkit-text-fill-color: #495057b0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+
+}
+
+li.gfield input[type=radio], .gfield_checkbox li input[type=checkbox] {
+	display:inline-block;
+	margin-top: 7px !important;
+  float: right;
+  width: 50%;
+	height: 20px;
+	text-align: left;
+}
+
+input[type=radio]{
+		margin-top:0 !important;
 }
