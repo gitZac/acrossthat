@@ -25,6 +25,7 @@ const dependencies = require('./dependencies.json');
 */
 
 const distDir = './dist/';
+const proxyServer = 'http://localhost:10073/';
 
 const paths = {
 	input: 'src/',
@@ -151,7 +152,7 @@ function copyDependencies() {
 // Init live server browser sync
 function initBrowserSync(done) {
   browserSync.init({
-    proxy: 'http://localhost:10043/',
+    proxy: proxyServer,
     port: 3000,
     notify: false
   });

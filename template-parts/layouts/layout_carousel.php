@@ -1,5 +1,7 @@
 <?php 
-global $section_count; ?>
+global $section_count; 
+$hide_controls = get_sub_field('hide_controls');
+?>
 <section id="section-<?php echo $section_count; ?>" class="carousel">
     <?php if(have_rows('carousel') ) : ?>
         <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -23,7 +25,7 @@ global $section_count; ?>
                     </div>
                 <?php endwhile; ?>
             </div> 
-            <?php get_template_part('/template-parts/partials/carousel/carousel', 'controls'); ?>
+            <?php if($hide_controls == false) {get_template_part('/template-parts/partials/carousel/carousel', 'controls');} ?>
         </div>
     <?php endif; ?>
 </section>
